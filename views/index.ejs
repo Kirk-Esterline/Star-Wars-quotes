@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/style.css" type="text/css">
+</head>
+<body>
+    <h1>May Node and Express be with you.</h1>
+    <form action="/quotes" method="POST">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="quote" name="quote">
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Quotes</h2>
+    <ul class ="quotes">
+        <% for(let i = 0; i < quotesCollection.length; i++) {%>
+        <li class="quote">
+            <span><%= quotesCollection[i].name %></span>:
+            <span><%= quotesCollection[i].quote %></span>
+        </li>
+        <% } %>
+    </ul>
+    <div>
+        <h2>Darth Vader has entered the chat!</h2>
+        <p>Talking over Yoda with his own problems</p>
+        <button id="update-button">Darth Vader being a JERK</button>
+    </div>
+    
+    <div>
+        <h2>That is enough from Lord Vader</h2>
+        <p>Delete one of Darth Vader's quotes, but do nothing if there are no more Vader quotes.</p>
+        <button id="delete-button">Delete Darth Vader</button>
+    </div>
+    <div id="message"></div>
+    <script src="/main.js"></script>
+</body>
+</html>
