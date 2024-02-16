@@ -217,7 +217,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/KapnKricket) - kirk.esterline@gmail.com
+Your Name - [@KapnKricket](https://twitter.com/KapnKricket) - kirk.esterline@gmail.com
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/Kirk-Esterline/Star-Wars-quotes)
 
